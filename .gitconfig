@@ -1,0 +1,6 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Aref Malek
+	email = malek.aref1@gmail.com
+	signingkey = C57261E450945401
+
