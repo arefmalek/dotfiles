@@ -31,7 +31,6 @@ tnoremap <C-b> <C-\><C-n>:call Term_toggle(13)<cr>
 " end of the ctrl b function
 
 
-
 " REMAPS 
 nmap <C-n> :NERDTreeToggle<CR>
 "Terminal remaps
@@ -46,6 +45,11 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+
+" The classic nvim gamer jk remap
+inoremap <jk> <Esc>
+inoremap <kj> <Esc>
 
 " insert mode remaps
 "changing insert mode
