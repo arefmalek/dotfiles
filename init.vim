@@ -30,6 +30,16 @@ nnoremap <C-b> :call Term_toggle(12)<cr>
 tnoremap <C-b> <C-\><C-n>:call Term_toggle(13)<cr>
 " end of the ctrl b function
 
+" guess where I got this from lmao
+au BufRead,BufNewFile *.md set filetype=md
+au BufRead,BufNewFile *.jl set filetype=julia
+" should make writing stuff a lot easier
+autocmd Filetype rust source ~/.config/nvim/rust.vim
+autocmd Filetype c source ~/.config/nvim/c.vim
+autocmd Filetype cpp source ~/.config/nvim/cpp.vim
+autocmd Filetype python source ~/.config/nvim/python.vim
+autocmd Filetype md source ~/.config/nvim/md.vim
+autocmd TermOpen * set nonumber norelativenumber
 
 " REMAPS 
 nmap <C-n> :NERDTreeToggle<CR>
@@ -78,7 +88,9 @@ filetype plugin indent on
 set modelines=0
 
 " Show line numbers
-set number
+set nu
+" prolly should be sep but do the relative line num thing
+set relativenumber
 
 " Show file stats
 set ruler
