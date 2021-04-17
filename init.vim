@@ -34,11 +34,11 @@ tnoremap <C-b> <C-\><C-n>:call Term_toggle(13)<cr>
 au BufRead,BufNewFile *.md set filetype=md
 au BufRead,BufNewFile *.jl set filetype=julia
 " should make writing stuff a lot easier
-autocmd Filetype rust source ~/.config/nvim/rust.vim
-autocmd Filetype c source ~/.config/nvim/c.vim
-autocmd Filetype cpp source ~/.config/nvim/cpp.vim
-autocmd Filetype python source ~/.config/nvim/python.vim
-autocmd Filetype md source ~/.config/nvim/md.vim
+autocmd Filetype rust source ~/dotfiles/rust.vim
+autocmd Filetype c source ~/dotfiles/c.vim
+autocmd Filetype cpp source ~/dotfiles/cpp.vim
+autocmd Filetype python source ~/dotfiles/python.vim
+autocmd Filetype md source ~/dotfiles/md.vim
 autocmd TermOpen * set nonumber norelativenumber
 
 " REMAPS 
@@ -189,7 +189,7 @@ Plug 'preservim/nerdtree' |
             \ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Auto complete that SHOULD work
-Plug 'Townk/vim-autoclose'
+Plug 'jiangmiao/auto-pairs'
 
 " Syntax error highlighting
 Plug 'dense-analysis/ale'
