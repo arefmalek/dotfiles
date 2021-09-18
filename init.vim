@@ -176,6 +176,7 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
     \ quit | endif
 
 " Color scheme (terminal)
+"
 call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 
